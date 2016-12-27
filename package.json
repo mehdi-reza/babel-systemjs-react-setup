@@ -4,36 +4,36 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "babel src --out-dir bin --source-maps inline --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-polyfill": "^6.20.0",
     "babel-preset-env": "^1.1.4",
     "babel-preset-react": "^6.16.0",
+    "concurrently": "^3.1.0",
+    "core-js": "^2.4.1",
     "live-server": "^1.1.0"
   },
   "babel": {
     "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "browsers": [
-              "last 2 versions",
-              "safari >= 7"
-            ]
-          },
-          "modules": "systemjs",
-          "useBuiltIns": true
+      "env",
+      {
+        "targets": {         
+          "browsers": [
+            "last 2 versions",
+            "safari 7"
+          ]
         }
-      ],
-      [
-        "react"
-      ]
+      }
+    ],
+    "ignore": [
+      "systemjs.config.js"
     ]
   },
   "dependencies": {
