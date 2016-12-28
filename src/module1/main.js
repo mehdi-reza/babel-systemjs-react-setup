@@ -1,3 +1,3 @@
 exports = {
-	fn: () -> console.log('loaded..')
+	fn : () => console.log('..')
 }
