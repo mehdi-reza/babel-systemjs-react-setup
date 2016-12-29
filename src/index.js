@@ -1,3 +1,3 @@
-const module1=require('./module1');
+import Cls from './module1'
 
-module1.fn();
+new Cls();

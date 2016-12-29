@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "babel src --out-dir bin --source-maps inline -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"babel src --out-dir bin --source-maps inline -w\" \"live-server --watch=./bin\" --wait=100 --verbose",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live-server": "live-server --watch=./bin\" --wait=100 --verbose"
   },
   "author": "",
   "license": "ISC",
@@ -18,9 +19,14 @@
     "babel-preset-react": "^6.16.0",
     "concurrently": "^3.1.0",
     "core-js": "^2.4.1",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
     "live-server": "^1.1.0"
   },
   "dependencies": {
     "systemjs": "^0.19.41"
-  }
+  },
+  "gruntConfig": {}
 }

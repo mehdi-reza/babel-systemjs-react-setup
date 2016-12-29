@@ -139,18 +139,19 @@
 	"expanded_folders":
 	[
 		"/E/TEMP/es6-babel",
-		"/E/TEMP/es6-babel/node_modules",
-		"/E/TEMP/es6-babel/node_modules/babel-polyfill/dist",
+		"/E/TEMP/es6-babel/bin",
+		"/E/TEMP/es6-babel/bin/module1",
 		"/E/TEMP/es6-babel/src",
 		"/E/TEMP/es6-babel/src/module1"
 	],
 	"file_history":
 	[
-		"/E/TEMP/es6-babel/package.json",
-		"/E/TEMP/es6-babel/bin/systemjs.config.js",
-		"/E/TEMP/es6-babel/src/systemjs.config.js",
 		"/E/TEMP/es6-babel/src/index.js",
 		"/E/TEMP/es6-babel/src/module1/main.js",
+		"/E/TEMP/es6-babel/package.json",
+		"/E/TEMP/es6-babel/.babelrc.json",
+		"/E/TEMP/es6-babel/bin/systemjs.config.js",
+		"/E/TEMP/es6-babel/src/systemjs.config.js",
 		"/E/TEMP/es6-babel/src/module/main.js",
 		"/E/TEMP/es6-babel/index.html",
 		"/E/TEMP/es6-babel/.gitignore",
@@ -355,7 +356,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 332.0,
+	"side_bar_width": 394.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
