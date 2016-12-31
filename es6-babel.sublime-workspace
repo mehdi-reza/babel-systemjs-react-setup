@@ -5,7 +5,7 @@
 		[
 			[
 				"Fu",
-				"FunctionConstructor	interface"
+				"FunctionConstructor\tinterface"
 			],
 			[
 				"canView",
@@ -19,6 +19,24 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 1221,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/module1/main.js",
+			"settings":
+			{
+				"buffer_size": 115,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -138,23 +156,22 @@
 	},
 	"expanded_folders":
 	[
-		"/E/TEMP/es6-babel",
-		"/E/TEMP/es6-babel/bin",
-		"/E/TEMP/es6-babel/bin/module1",
-		"/E/TEMP/es6-babel/src",
-		"/E/TEMP/es6-babel/src/module1"
+		"/C/TEMP/babel-systemjs-setup",
+		"/C/TEMP/babel-systemjs-setup/bin",
+		"/C/TEMP/babel-systemjs-setup/bin/module1",
+		"/C/TEMP/babel-systemjs-setup/node_modules/grunt-babel",
+		"/C/TEMP/babel-systemjs-setup/node_modules/grunt-babel/tasks",
+		"/C/TEMP/babel-systemjs-setup/src",
+		"/C/TEMP/babel-systemjs-setup/src/module1"
 	],
 	"file_history":
 	[
-		"/E/TEMP/es6-babel/src/index.js",
-		"/E/TEMP/es6-babel/src/module1/main.js",
-		"/E/TEMP/es6-babel/package.json",
-		"/E/TEMP/es6-babel/.babelrc.json",
-		"/E/TEMP/es6-babel/bin/systemjs.config.js",
-		"/E/TEMP/es6-babel/src/systemjs.config.js",
-		"/E/TEMP/es6-babel/src/module/main.js",
-		"/E/TEMP/es6-babel/index.html",
-		"/E/TEMP/es6-babel/.gitignore",
+		"/C/TEMP/babel-systemjs-setup/bin/module1/main.js",
+		"/C/TEMP/babel-systemjs-setup/src/module1/main.js",
+		"/C/TEMP/babel-systemjs-setup/package.json",
+		"/C/TEMP/babel-systemjs-setup/src/index.js",
+		"/C/TEMP/babel-systemjs-setup/node_modules/grunt-babel/tasks/babel.js",
+		"/C/TEMP/babel-systemjs-setup/index.html",
 		"/E/TEMP/es6/package.json",
 		"/E/TEMP/es6/src/index.ts",
 		"/E/TEMP/es6/index.html",
@@ -266,8 +283,67 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								360,
+								360
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/module1/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -356,7 +432,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 394.0,
+	"side_bar_width": 294.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

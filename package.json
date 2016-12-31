@@ -28,5 +28,7 @@
   "dependencies": {
     "systemjs": "^0.19.41"
   },
-  "gruntConfig": {}
+  "gruntConfig": {
+    "port": 8080
+  }
 }
