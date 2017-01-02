@@ -20,10 +20,19 @@
 	"buffers":
 	[
 		{
-			"file": "Gruntfile.js",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1221,
+				"buffer_size": 378,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/index.js",
+			"settings":
+			{
+				"buffer_size": 190,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -32,7 +41,25 @@
 			"file": "src/module1/main.js",
 			"settings":
 			{
-				"buffer_size": 115,
+				"buffer_size": 342,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/systemjs.config.js",
+			"settings":
+			{
+				"buffer_size": 1185,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 939,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -61,10 +88,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "Package Control: ",
+		"height": 104.0,
+		"last_filter": "install p",
 		"selected_items":
 		[
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
@@ -76,10 +107,6 @@
 			[
 				"gulp task",
 				"Gulp: Run arbitrary task"
-			],
-			[
-				"install p",
-				"Package Control: Install Package"
 			],
 			[
 				"install ",
@@ -134,7 +161,7 @@
 				"Snippet: #!/usr/bin/env"
 			]
 		],
-		"width": 400.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -157,18 +184,28 @@
 	"expanded_folders":
 	[
 		"/C/TEMP/babel-systemjs-setup",
-		"/C/TEMP/babel-systemjs-setup/bin",
 		"/C/TEMP/babel-systemjs-setup/bin/module1",
-		"/C/TEMP/babel-systemjs-setup/node_modules/grunt-babel",
-		"/C/TEMP/babel-systemjs-setup/node_modules/grunt-babel/tasks",
-		"/C/TEMP/babel-systemjs-setup/src",
-		"/C/TEMP/babel-systemjs-setup/src/module1"
+		"/C/TEMP/babel-systemjs-setup/node_modules",
+		"/C/TEMP/babel-systemjs-setup/node_modules/fbjs/lib",
+		"/C/TEMP/babel-systemjs-setup/node_modules/process",
+		"/C/TEMP/babel-systemjs-setup/node_modules/process-nextick-args",
+		"/C/TEMP/babel-systemjs-setup/node_modules/react",
+		"/C/TEMP/babel-systemjs-setup/node_modules/react/dist",
+		"/C/TEMP/babel-systemjs-setup/node_modules/react-bootstrap",
+		"/C/TEMP/babel-systemjs-setup/node_modules/react-dom",
+		"/C/TEMP/babel-systemjs-setup/node_modules/react-dom/dist",
+		"/C/TEMP/babel-systemjs-setup/src"
 	],
 	"file_history":
 	[
+		"/C/TEMP/babel-systemjs-setup/node_modules/fbjs/lib/invariant.js",
+		"/C/TEMP/babel-systemjs-setup/node_modules/fbjs/lib/areEqual.js.flow",
+		"/C/TEMP/babel-systemjs-setup/src/module1/shoppingList.js",
+		"/C/TEMP/babel-systemjs-setup/package.json",
+		"/C/TEMP/babel-systemjs-setup/Gruntfile.js",
+		"/C/TEMP/babel-systemjs-setup/README.md",
 		"/C/TEMP/babel-systemjs-setup/bin/module1/main.js",
 		"/C/TEMP/babel-systemjs-setup/src/module1/main.js",
-		"/C/TEMP/babel-systemjs-setup/package.json",
 		"/C/TEMP/babel-systemjs-setup/src/index.js",
 		"/C/TEMP/babel-systemjs-setup/node_modules/grunt-babel/tasks/babel.js",
 		"/C/TEMP/babel-systemjs-setup/index.html",
@@ -283,31 +320,57 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gruntfile.js",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1221,
+						"buffer_size": 378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								360,
-								360
+								369,
+								369
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -317,31 +380,90 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "src/module1/main.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 115,
+						"buffer_size": 342,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								103,
-								103
+								218,
+								218
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/systemjs.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								413,
+								413
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -417,12 +539,12 @@
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 334.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 624.0
 	},
 	"selected_group": 0,
 	"settings":

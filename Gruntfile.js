@@ -10,14 +10,6 @@ module.exports = function(grunt) {
                 tasks:['babel']
             }
         },
-        /*connect: {
-            dev: {
-                options: {
-                    port: 8000,
-                    livereload: true
-                }
-            }
-        },*/
         babel: {
             options: {
                 sourceMap: true,
@@ -36,8 +28,6 @@ module.exports = function(grunt) {
     });
 
     // Load the plugin that provides the "uglify" task.
-    //grunt.loadNpmTasks('grunt-contrib-uglify');
-    //grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-babel');
 
