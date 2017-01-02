@@ -1,9 +1,5 @@
- {
- 	"presets": [
- 		"es2015",
- 		"react"
- 	],
- 	"ignore": [
- 		"systemjs.config.js"
- 	]
- }
+{
+    "sourceMap": true,
+    "presets": ["es2015", "react"],
+    "ignore": ["src/systemjs.config.js"]
+}

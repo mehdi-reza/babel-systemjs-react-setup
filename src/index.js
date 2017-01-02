@@ -1,6 +1,7 @@
 import React from 'react';
-import {render} from 'react-dom';
-import TestComponent from './module1';
 
-render(<TestComponent name="Mehdi Raza" />,
-	document.getElementById("test-component"));
+import {Square, Board, Game} from './board-game';
+import {render} from 'react-dom';
+
+render(<Game />,
+	document.getElementById("game-root"));

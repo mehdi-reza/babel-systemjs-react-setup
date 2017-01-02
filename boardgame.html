@@ -6,14 +6,16 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="src/systemjs.config.js"></script>
     <script>
-    console.log(new Date());
     SystemJS.import('index.js');
     </script>
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/boardgame.css" />
 </head>
 
 <body>
-<div id="test-component"></div>
+	Tutorial: <a href="https://facebook.github.io/react/tutorial/tutorial.html">Board Game</a>
+	<hr/>
+	<div id="game-root"></div>
 </body>
 
 </html>

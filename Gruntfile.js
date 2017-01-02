@@ -1,21 +1,21 @@
 module.exports = function(grunt) {
     // Project configuration.
+    var babelOptions=grunt.file.readJSON('.babelrc');
     grunt.initConfig({
+        clean: {
+            dev:['bin']
+        },
         watch: {
             options: {
                 livereload: true
             },
             babel: {
                 files: './src/**/*.js',
-                tasks:['babel']
+                tasks:['newer:babel']
             }
         },
         babel: {
-            options: {
-                sourceMap: true,
-                presets: ['es2015', 'react'],
-                ignore: ['src/systemjs.config.js']
-            },
+            options: babelOptions,
             dev: {
                 files: [{
                     expand:true,
@@ -28,12 +28,13 @@ module.exports = function(grunt) {
     });
 
     // Load the plugin that provides the "uglify" task.
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-babel');
+    grunt.loadNpmTasks('grunt-newer');
 
     // Default task(s).
     grunt.registerTask('default', [
-        'watch'
+        'clean','babel','watch'
     ]);
-
 };
