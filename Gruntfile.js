@@ -7,10 +7,11 @@ module.exports = function(grunt) {
         },
         watch: {
             options: {
-                livereload: true
+                livereload: true,                
+                spawn:false
             },
             babel: {
-                files: './src/**/*.js',
+                files:['./src/**/*.js'],
                 tasks:['newer:babel']
             }
         },
@@ -37,4 +38,8 @@ module.exports = function(grunt) {
     grunt.registerTask('default', [
         'clean','babel','watch'
     ]);
+
+    grunt.event.on('watch', function(action, filepath, target) {
+      grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
+    });
 };

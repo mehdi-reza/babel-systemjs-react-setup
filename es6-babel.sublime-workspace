@@ -20,46 +20,29 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "boardgame.html",
 			"settings":
 			{
-				"buffer_size": 378,
+				"buffer_size": 598,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/index.js",
+			"file": "styles/boardgame.css",
 			"settings":
 			{
-				"buffer_size": 190,
+				"buffer_size": 639,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows",
+				"name": "body {"
 			}
 		},
 		{
-			"file": "src/module1/main.js",
+			"file": "src/board-game/index.js",
 			"settings":
 			{
-				"buffer_size": 342,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/systemjs.config.js",
-			"settings":
-			{
-				"buffer_size": 1185,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 939,
+				"buffer_size": 3088,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -184,29 +167,30 @@
 	"expanded_folders":
 	[
 		"/C/TEMP/babel-systemjs-setup",
-		"/C/TEMP/babel-systemjs-setup/bin/module1",
 		"/C/TEMP/babel-systemjs-setup/node_modules",
-		"/C/TEMP/babel-systemjs-setup/node_modules/fbjs/lib",
-		"/C/TEMP/babel-systemjs-setup/node_modules/process",
-		"/C/TEMP/babel-systemjs-setup/node_modules/process-nextick-args",
-		"/C/TEMP/babel-systemjs-setup/node_modules/react",
 		"/C/TEMP/babel-systemjs-setup/node_modules/react/dist",
-		"/C/TEMP/babel-systemjs-setup/node_modules/react-bootstrap",
 		"/C/TEMP/babel-systemjs-setup/node_modules/react-dom",
 		"/C/TEMP/babel-systemjs-setup/node_modules/react-dom/dist",
-		"/C/TEMP/babel-systemjs-setup/src"
+		"/C/TEMP/babel-systemjs-setup/src",
+		"/C/TEMP/babel-systemjs-setup/src/board-game"
 	],
 	"file_history":
 	[
+		"/C/TEMP/babel-systemjs-setup/README.md",
+		"/C/Users/Mehdi Raza/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Mehdi Raza/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/Mehdi Raza/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/C/TEMP/babel-systemjs-setup/package.json",
+		"/C/TEMP/babel-systemjs-setup/src/index.js",
+		"/C/TEMP/babel-systemjs-setup/src/systemjs.config.js",
+		"/C/TEMP/babel-systemjs-setup/.babelrc",
+		"/C/TEMP/babel-systemjs-setup/Gruntfile.js",
+		"/C/TEMP/babel-systemjs-setup/src/module1/main.js",
+		"/C/TEMP/babel-systemjs-setup/src/board-game/index.js",
 		"/C/TEMP/babel-systemjs-setup/node_modules/fbjs/lib/invariant.js",
 		"/C/TEMP/babel-systemjs-setup/node_modules/fbjs/lib/areEqual.js.flow",
 		"/C/TEMP/babel-systemjs-setup/src/module1/shoppingList.js",
-		"/C/TEMP/babel-systemjs-setup/package.json",
-		"/C/TEMP/babel-systemjs-setup/Gruntfile.js",
-		"/C/TEMP/babel-systemjs-setup/README.md",
 		"/C/TEMP/babel-systemjs-setup/bin/module1/main.js",
-		"/C/TEMP/babel-systemjs-setup/src/module1/main.js",
-		"/C/TEMP/babel-systemjs-setup/src/index.js",
 		"/C/TEMP/babel-systemjs-setup/node_modules/grunt-babel/tasks/babel.js",
 		"/C/TEMP/babel-systemjs-setup/index.html",
 		"/E/TEMP/es6/package.json",
@@ -325,19 +309,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "boardgame.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 378,
+						"buffer_size": 598,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								369,
-								369
+								589,
+								589
 							]
 						],
 						"settings":
@@ -348,122 +332,68 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 190,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								60,
-								60
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/module1/main.js",
+					"buffer": 1,
+					"file": "styles/boardgame.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 342,
+						"buffer_size": 639,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								218,
-								218
+								107,
+								107
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/systemjs.config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1185,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								480,
-								480
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Gruntfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 939,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								413,
-								413
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
+							"auto_name": "body {",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/board-game/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3088,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1270,
+								1270
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 376.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
