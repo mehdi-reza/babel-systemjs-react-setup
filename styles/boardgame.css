@@ -1,6 +1,6 @@
-body {
+#game-root {
   font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  margin: 20px !important;
 }
 
 ol, ul {

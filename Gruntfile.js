@@ -11,8 +11,12 @@ module.exports = function(grunt) {
                 spawn:false
             },
             babel: {
-                files:['./src/**/*.js'],
-                tasks:['newer:babel']
+                files: ['./src/**/*.js'],
+                tasks: ['newer:babel']
+            },
+            css: {
+            	files: ['styles/**/*.css'],
+            	tasks: ['cssmin','concat']
             }
         },
         babel: {
@@ -26,6 +30,30 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        cssmin: {
+        	all: {
+        		files:[{
+			      expand: true,
+			      cwd: 'styles',
+			      src: ['*.css'],
+			      dest: 'dist',
+			      ext: '.min.css'
+			    }]
+        	}
+        },
+        concat: {
+			options: {
+		      separator: ';',
+		      stripBanners: {
+		      	block:true,
+		      	line:true
+		      }
+		    },
+		    dist: {
+		      src: ['dist/*.css','!dist/bundle.css'],
+		      dest: 'dist/bundle.css',
+		    },
+        },
         execute: {
             build: {
                 src: ['build.js'] 
@@ -33,7 +61,9 @@ module.exports = function(grunt) {
         }
     });
 
-    // Load the plugin that provides the "uglify" task.
+    // Load plugins..
+	grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-babel');
@@ -42,11 +72,11 @@ module.exports = function(grunt) {
 
     // Default task(s).
     grunt.registerTask('dev', [
-        'clean','babel','watch'
+        'clean','babel','cssmin','concat','watch'
     ]);
 
     grunt.registerTask('build', [
-        'clean','babel','execute:build'
+        'clean','babel','cssmin','concat','execute:build'
     ]);
 
     grunt.event.on('watch', function(action, filepath, target) {
