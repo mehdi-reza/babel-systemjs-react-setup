@@ -20,29 +20,31 @@
 	"buffers":
 	[
 		{
-			"file": "boardgame.html",
+			"file": "Gruntfile.js",
 			"settings":
 			{
-				"buffer_size": 598,
+				"buffer_size": 1451,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "styles/boardgame.css",
+			"file": "build.js",
 			"settings":
 			{
-				"buffer_size": 639,
+				"buffer_size": 486,
 				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "body {"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/board-game/index.js",
+			"contents": "(function(global) {\n    SystemJS.defaultJSExtensions = true;\n    SystemJS.config({\n        baseURL: '/bin',\n        path: {\n            \"npm:*\":\"/node_modules/*\",\n            \"react\":\"/node_modules/react\"\n        },\n        packages: {\n            \"board-game\": {\n                main: './index'\n            },\n            \"gl\": {\n                main: './index'\n            },\n            \"react\": {\n                main: 'react'\n            },\n            \"react-dom\": {\n                main: 'react-dom'\n            },\n            \"react-bootstrap\": {\n                main: \"react-bootstrap\"\n            }\n        },\n        map: {\n            \"react\": \"/node_modules/react/dist\",\n            \"react-dom\": \"/node_modules/react-dom/dist\",\n            \"react-bootstrap\": \"/node_modules/react-bootstrap/dist\"\n        }\n    })\n})(this);",
+			"file": "src/systemjs.config.js",
+			"file_size": 835,
+			"file_write_time": 131279958965672221,
 			"settings":
 			{
-				"buffer_size": 3088,
+				"buffer_size": 835,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -168,25 +170,26 @@
 	[
 		"/C/TEMP/babel-systemjs-setup",
 		"/C/TEMP/babel-systemjs-setup/node_modules",
-		"/C/TEMP/babel-systemjs-setup/node_modules/react/dist",
-		"/C/TEMP/babel-systemjs-setup/node_modules/react-dom",
-		"/C/TEMP/babel-systemjs-setup/node_modules/react-dom/dist",
-		"/C/TEMP/babel-systemjs-setup/src",
-		"/C/TEMP/babel-systemjs-setup/src/board-game"
+		"/C/TEMP/babel-systemjs-setup/src"
 	],
 	"file_history":
 	[
+		"/C/TEMP/babel-systemjs-setup/boardgame.html",
+		"/C/TEMP/babel-systemjs-setup/package.json",
+		"/C/TEMP/babel-systemjs-setup/build.js",
+		"/C/TEMP/babel-systemjs-setup/src/systemjs.config.js",
+		"/C/TEMP/babel-systemjs-setup/src/index.js",
+		"/C/TEMP/babel-systemjs-setup/src/systemjs.config.build.js",
+		"/C/TEMP/babel-systemjs-setup/systemjs.config.build.js",
+		"/C/TEMP/babel-systemjs-setup/Gruntfile.js",
+		"/C/TEMP/babel-systemjs-setup/styles/boardgame.css",
+		"/C/TEMP/babel-systemjs-setup/src/board-game/index.js",
 		"/C/TEMP/babel-systemjs-setup/README.md",
 		"/C/Users/Mehdi Raza/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Mehdi Raza/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
 		"/C/Users/Mehdi Raza/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
-		"/C/TEMP/babel-systemjs-setup/package.json",
-		"/C/TEMP/babel-systemjs-setup/src/index.js",
-		"/C/TEMP/babel-systemjs-setup/src/systemjs.config.js",
 		"/C/TEMP/babel-systemjs-setup/.babelrc",
-		"/C/TEMP/babel-systemjs-setup/Gruntfile.js",
 		"/C/TEMP/babel-systemjs-setup/src/module1/main.js",
-		"/C/TEMP/babel-systemjs-setup/src/board-game/index.js",
 		"/C/TEMP/babel-systemjs-setup/node_modules/fbjs/lib/invariant.js",
 		"/C/TEMP/babel-systemjs-setup/node_modules/fbjs/lib/areEqual.js.flow",
 		"/C/TEMP/babel-systemjs-setup/src/module1/shoppingList.js",
@@ -304,59 +307,30 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "boardgame.html",
+					"file": "Gruntfile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 598,
+						"buffer_size": 1451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								589,
-								589
+								233,
+								233
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "styles/boardgame.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 639,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								107,
-								107
-							]
-						],
-						"settings":
-						{
-							"auto_name": "body {",
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -367,33 +341,61 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/board-game/index.js",
+					"buffer": 1,
+					"file": "build.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3088,
+						"buffer_size": 486,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1270,
-								1270
+								330,
+								330
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/systemjs.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 376.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -484,7 +486,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 294.0,
+	"side_bar_width": 275.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

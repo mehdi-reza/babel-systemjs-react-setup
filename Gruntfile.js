@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     var babelOptions=grunt.file.readJSON('.babelrc');
     grunt.initConfig({
         clean: {
-            dev:['bin']
+            dev:['bin','dist']
         },
         watch: {
             options: {
@@ -17,13 +17,18 @@ module.exports = function(grunt) {
         },
         babel: {
             options: babelOptions,
-            dev: {
+            transpile: {
                 files: [{
                     expand:true,
                     cwd:'src/',
                     src:'**/*.js',
                     dest:'bin/'
                 }]
+            }
+        },
+        execute: {
+            build: {
+                src: ['build.js'] 
             }
         }
     });
@@ -33,10 +38,15 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-babel');
     grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks('grunt-execute'); // for building
 
     // Default task(s).
-    grunt.registerTask('default', [
+    grunt.registerTask('dev', [
         'clean','babel','watch'
+    ]);
+
+    grunt.registerTask('build', [
+        'clean','babel','execute:build'
     ]);
 
     grunt.event.on('watch', function(action, filepath, target) {

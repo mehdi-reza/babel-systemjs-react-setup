@@ -1,15 +1,18 @@
 (function(global) {
     SystemJS.defaultJSExtensions = true;
     SystemJS.config({
-        baseURL: '/bin',
+        baseURL: 'bin',
+        paths: {
+            "react*":"/node_modules/react*" // only used in build
+        },
         packages: {
             "board-game": {
                 main: './index'
             },
-            gl: {
+            "gl": {
                 main: './index'
             },
-            react: {
+            "react": {
                 main: 'react'
             },
             "react-dom": {
@@ -19,7 +22,6 @@
                 main: "react-bootstrap"
             }
         },
-        transpiler: 'Babel',
         map: {
             "react": "/node_modules/react/dist",
             "react-dom": "/node_modules/react-dom/dist",
