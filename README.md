@@ -7,7 +7,7 @@ Babel is used for transpiling only changed files with JSX, thanks to [grunt-newe
 1. npm install
 2. npm start
 
-Have NGINX point to the project folder, verify by browsing [Game Board](http://localhost/boardgame.html)
+Have NGINX point to the project folder, verify by browsing [Board Game](http://localhost/boardgame.html)
 
 **Build**
 
