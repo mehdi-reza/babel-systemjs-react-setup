@@ -2,6 +2,8 @@
 
 This setup has no dependency on WEBPACK and gives you all options to configure NGINX with any Tomcat/JavaEE upstream server for API calls.
 
+Babel is used for transpiling only changed files with JSX, thanks to [grunt-newer](https://github.com/tschaub/grunt-newer) task. You have complete control on babel with .babelrc in root
+
 1. npm install
 2. npm start
 
