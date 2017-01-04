@@ -3,9 +3,9 @@
 This setup has no dependency on WEBPACK and gives you all options to configure NGINX with any Tomcat/JavaEE upstream server for API calls.
 
 1. npm install
-2. npm run dev
+2. npm start
 
-Have NGINX point to the project folder, verify by browsing [link](http://localhost/boardgame.html)
+Have NGINX point to the project folder, verify by browsing [Game Board](http://localhost/boardgame.html)
 
 **Build**
 
