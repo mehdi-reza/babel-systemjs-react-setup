@@ -1,4 +1,4 @@
-# babel-systemjs-setup
+# babel-systemjs-react-setup
 
 This setup has no dependency on WEBPACK and gives you all options to configure NGINX with any Tomcat/JavaEE upstream server for API calls.
 
