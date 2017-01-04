@@ -13,8 +13,8 @@ Have NGINX point to the project folder, verify by browsing [Board Game](http://l
 
 1. npm run build
 
-1. Will generate bundle.js files for all modules.
-2. All .css files in styles folder will be concatenated and minified, output generated as bundle.css in dist folder.
+* Will generate bundle.js files for all modules.
+* All .css files in styles folder will be concatenated and minified, output generated as bundle.css in dist folder.
 
 For development always dist/bundle.css should be used, no need to have any less,css babel plugin for SystemJS.
 
